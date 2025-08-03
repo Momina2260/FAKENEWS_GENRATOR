@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Generator</title>
+</head>
+<body>
+    <h1>Welcome to the Fake News Generator</h1>
+    
+    <form action="/generate" method="post">
+        <p>Select Mode:</p>
+        <label><input type="radio" name="mode" value="1" checked> Random</label><br>
+        <label><input type="radio" name="mode" value="2"> Manual</label><br><br>
+
+        <div>
+            <input type="text" name="subject" placeholder="Enter subject"><br>
+            <input type="text" name="actions" placeholder="Enter action"><br>
+            <input type="text" name="places_or_things" placeholder="Enter object/place"><br>
+        </div>
+
+        <br><button type="submit">Generate Headline</button>
+    </form>
+</body>
+</html>
